@@ -7,5 +7,5 @@ html, body {
 
 @font-face {
   font-family: EmojiOne;
-  src: url("/assets/TwitterColorEmoji-SVGinOT.ttf") format("truetype");
+  src: url("assets/TwitterColorEmoji-SVGinOT.ttf") format("truetype");
 }
