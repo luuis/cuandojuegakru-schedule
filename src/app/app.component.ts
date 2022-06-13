@@ -33,7 +33,8 @@ export class AppComponent {
     'RLCS_2021-22',
     'VALORANT_Challengers',
     'VALORANT_Masters',
-    'VALORANT_Champions'
+    'VALORANT_Champions',
+    'VALORANT_Game_Changers',
   ];
 
   constructor(
@@ -42,9 +43,11 @@ export class AppComponent {
 
   onStartDateChange(startDate: Date): void {
     this.startDate = new Date(startDate);
+    this.startDate.setDate(this.startDate.getDate() + 1);
   }
   onEndDateChange(endDate: Date): void {
     this.endDate = new Date(endDate);
+    this.endDate.setDate(this.endDate.getDate() + 1);
   }
 
   eventForm = this.formBuilder.group({
